@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-color: #00bfff;
+}
+
+body {
+    color: #fff;
+    background: #111;
+    font-family: 'Poppins', sans-serif;
+    overscroll-behavior: none;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.activepage {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    /* width: 250px; */
+    z-index: 999;
+    background-color: rgba(19, 19, 19, 0.759);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+}
+
+.container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 40px;
+    height: 100px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.container nav h1 {
+    font-size: 2.6em;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    pointer-events: all;
+    letter-spacing: 4px;
+}
+
+.container nav h1 span {
+    color: var(--bs-color);
+}
+
+.desktopsidebar ul {
+    display: flex;
+}
+
+.container nav ul li {
+    position: relative;
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 12px 18px;
+    cursor: pointer;
+    pointer-events: all;
+    overflow: hidden;
+}
+
+.container nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 0%;
+    height: 3px;
+    left: 50%;
+    background: var(--bs-color);
+    transform: translateX(-50%);
+    transition: .3s;
+}
+
+.container nav li:hover {
+    color: var(--bs-color);
+}
+
+.container nav li:hover::after {
+    width: 80%;
+}
+
+.container section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    text-align: center;
+    pointer-events: none;
+}
+
+.container section1 {
+    text-align: center;
+}
+
+.textBox h1 {
+    font-size: 3.4em;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(backoftextwithcolor.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+
+.projecthead {
+    font-family: 'Lobster', sans-serif;
+    font-size: 4em;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(textback.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+div.sword {
+
+    margin-top: 10vh;
+    margin-left: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+}
+
+.swordimage img {
+    margin-left: 5vh;
+    height: 50vh;
+    width: 50vh;
+
+
+}
+
+div.carmodels {
+
+    margin-top: 10vh;
+    margin-left: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+}
+
+.imageslider1 {
+    display: flex;
+    justify-content: center;
+}
+
+.imageslider {
+    margin-top: 5vh;
+    width: 70%;
+    height: 500px;
+    background-image: url(cybertruck.jpeg);
+    background-size: 100% 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    animation: changeimage 5s linear infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+@keyframes changeimage {
+    0% {
+        background-image: url(cybertruck.jpeg);
+    }
+
+    25% {
+        background-image: url(cybertruck\ 2.jpeg);
+
+    }
+
+    50% {
+        background-image: url(cybertruck\ 3.jpeg);
+
+    }
+
+    75% {
+        background-image: url(cybertruck\ 4.jpeg);
+
+    }
+
+    100% {
+        background-image: url(cybertruck.jpeg);
+    }
+}
+
+.container1 {
+    margin-top: 10vh;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container1 ul {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.container1 ul li {
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.container1 ul li video {
+    width: 200px;
+    transition: all 0.3s;
+}
+
+.container1 ul li video:hover {
+    transform: scale(1.1);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+
+.textBox p1 {
+    font-size: 1.2em;
+}
+
+.textBox .homeBtn {
+    font-family: 'Poppins';
+    padding: 8px 18px;
+    margin: 16px 12px;
+    font-size: 26px;
+    background-color: transparent;
+    color: var(--i);
+    outline: none;
+    border: 3px solid var(--i);
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.textBox .homeBtn:hover {
+    background-color: var(--i);
+    color: #000;
+}
+
+.bgAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox {
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+
+.colorBox:hover {
+    background: var(--bs-color);
+    transition-duration: 0s;
+}
+
+.backgroundAmim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var(--bs-color);
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+.menu-button {
+    display: none;
+}
+
+@keyframes animBack {
+    0% {
+        top: -60px;
+    }
+
+    100% {
+        top: 120%;
+    }
+}
+
+@media (max-width:800px) {
+    .hideonmobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+}
+
+@media(max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+}

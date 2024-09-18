@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROCODER</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+
+        </div>
+    </div>
+    <div class="container">
+        <nav>
+            <h1><span>PRO</span>CODER</h1>
+            <div class="sidebar">
+                <ul>
+                    <li onclick=closesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 -960 960 960" width="24">
+                                <path fill="white"
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li>
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                   
+                    <li>
+                        <a class="nav-link" href="./project.html">Project</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="desktopsidebar">
+                <ul>
+                    <li class="hideonmobile">
+                        <div class="nav-link">
+                            <a class="activepage"  href="./index.html">Home</a>
+                        </div>
+                    </li>
+                   
+                    <!-- <li>Our Team</li> -->
+                    <li class="hideonmobile">
+                        <!-- <a class="nav-link" href="./project.html">Project</a> -->
+                    </li>
+                    <li class="hideonmobile">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="menu-button" onclick=showsidebar()>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960"
+                                width="40">
+                                <path fill="white" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <section>
+            <div class="textBox">
+                <h1>MY FIRST WEBPAGE</h1>
+                <p1 class=" text-capitalize mb-5">Welcome to my website! I’m excited to share my passion for Wed
+                    devlopment<br>
+                    with you. Here, you’ll find a collection of my favorite things</p1>
+                <br>
+                <button class="homeBtn" style="--i:#fff;" onclick="location.href='./contact.html'">Join Us</button>
+                <button class="homeBtn" style="--i:#00bfff;" onclick="location.href='./project.html'">EXPLORE</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+   
+</body>
+
+</html>

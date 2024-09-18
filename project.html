@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROCODER</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- <div class="bgAnimation" id="bgAnimation"> -->
+    <!-- <div class="backgroundAmim"> -->
+
+    </div>
+    </div>
+    <div class="container">
+        <nav>
+            <h1><span>PRO</span>CODER</h1>
+            <div class="sidebar">
+                <ul>
+                    <li onclick=closesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                viewBox="0 -960 960 960" width="24">
+                                <path fill="white"
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li>
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="./project.html">Project</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="desktopsidebar">
+                <ul>
+                    <li class="hideonmobile">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+
+                    <!-- <li>Our Team</li> -->
+                    <li class="hideonmobile">
+                        <div class="nav-link">
+                            <a class="activepage" href="./project.html">Project</a>
+                        </div>
+                    </li>
+                    <li class="hideonmobile">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="menu-button" onclick=showsidebar()>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960"
+                                width="40">
+                                <path fill="white"
+                                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <section1>
+            <div class="textBox">
+                <div class="projecthead">
+                    MY Work In 3D Animation
+                </div>
+                <div class="sword">
+                    sword model
+                    <div class="swordimage">
+                        <img src="./sword.png">
+                    </div>
+
+
+                </div>
+                <div class="carmodels">
+                    cybertruck
+                </div>
+                <div class="imageslider1">
+                    <div class="imageslider">
+
+                    </div>
+                </div>
+                <div class="carmodels">
+                    Video Animations
+                </div>
+
+            </div>
+
+
+
+
+
+
+    </div>
+    </section>
+    </div>
+    <div class="container1">
+        <video src="./Chase.mp4" class="slider" autoplay loop muted controls></video>
+
+        <ul>
+            <li onclick="videoslider('./Chase.mp4')"><video src="./Chase.mp4"></video></li>
+            <li onclick="videoslider('./carchase.mp4')"><video src="./carchase.mp4"></video></li>
+            <li onclick="videoslider('./stormynights 2.mp4')"><video src="./stormynights 2.mp4"></video></li>
+            <li onclick="videoslider('./sword with evevo0001-0200.mp4')"><video src="./sword with evevo0001-0200.mp4"></video></li>
+            <li onclick="videoslider('./lastofusscean.mp4')"><video src="./lastofusscean.mp4"></video></li>
+        </ul>
+    </div>
+    <script>
+        function videoslider(links) {
+            document.querySelector(".slider").src = links;
+        }
+    </script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
